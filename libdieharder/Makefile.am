@@ -56,6 +56,7 @@ libdieharder_la_SOURCES = \
 	diehard_sums.c \
 	dieharder_rng_types.c \
 	dieharder_test_types.c \
+	globals.c \
 	histogram.c \
 	kstest.c \
 	marsaglia_tsang_gcd.c \

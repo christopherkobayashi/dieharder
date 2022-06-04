@@ -33,6 +33,7 @@ dieharder_SOURCES = \
 	choose_rng.c \
 	dieharder.c \
 	dieharder_exit.c \
+	globals.c \
 	help.c \
 	list_rngs.c \
 	list_tests.c \

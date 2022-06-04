@@ -5,6 +5,7 @@
  */
 
 #include <dieharder/libdieharder.h>
+#include <dieharder/rgb_persist.h>
 
 /*
  * This should be the only tool we use to access bit substrings

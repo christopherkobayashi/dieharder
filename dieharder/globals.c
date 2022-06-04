@@ -24,8 +24,8 @@
  * blank the default because it is hard to specify a blank on the CL but
  * easy to specify the others?
  */
-extern unsigned int tflag,tflag_default;
-extern char table_separator;
+unsigned int tflag,tflag_default;
+char table_separator;
 #include "output.h"
 
 /*
@@ -33,42 +33,22 @@ extern char table_separator;
  * test number OR a test name; we have to sort that out when we
  * choose a test.
  */
-extern int dtest_num;
-extern char dtest_name[128];
-extern char generator_name[128];
+int dtest_num;
+char dtest_name[128];
+char generator_name[128];
 
 /*
  * user_template sources are here, not in library
  */
 #include "user_template.h"
 
-extern double rng_avg_time_nsec,rng_rands_per_second;
-extern double strategy;
+double rng_avg_time_nsec,rng_rands_per_second;
+double strategy;
 
 #ifdef RDIEHARDER
-extern Test **rdh_testptr;		/* kludge: need a global to report back to R */
-extern Dtest *rdh_dtestptr;		/* kludge: need a global to report back to R */
+Test **rdh_testptr;		/* kludge: need a global to report back to R */
+Dtest *rdh_dtestptr;		/* kludge: need a global to report back to R */
 #endif
-
-extern void list_rngs();
-extern void list_tests();
-extern void output_rnds();
-extern void Exit(int);
-extern void time_rng();
-extern void set_globals();
-extern void choose_rng();
-extern int execute_test(int);
-extern void run_all_tests();
-extern void run_test();
-extern void add_ui_rngs();
-extern void parsecl(int argc, char **argv);
-extern void output(Dtest *dtest,Test **test);
-extern void show_test_header(Dtest *dtest,Test **test);
-extern void show_test_header_debug(Dtest *dtest,Test **test);
-extern void test_header(Dtest *dtest);
-extern void show_test_results(Dtest *dtest,Test **test);
-extern void show_test_results_debut(Dtest *dtest,Test **test);
-extern void test_footer(Dtest *dtest, double pvalue, double *pvalues);
 
 /*
  * List new rng types to be added in startup.c.  Use "empty" or
@@ -79,4 +59,12 @@ extern void test_footer(Dtest *dtest, double pvalue, double *pvalues);
  */
 GSL_VAR const gsl_rng_type *gsl_rng_empty_random;
 
+
+/*
+ *========================================================================
+ * $Id: libdieharder.h 221 2006-08-16 22:43:03Z rgb $
+ *
+ * See copyright in copyright.h and the accompanying file COPYING
+ *========================================================================
+ */
 

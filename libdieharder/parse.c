@@ -12,8 +12,6 @@
 #include <string.h>
 #include <dieharder/parse.h>
 
- int verbose;
-
 /*
  * split() is a reusable routine to break up a string into char[PBUF]
  * fields.  Anything past PBUF characters is truncated.  The output

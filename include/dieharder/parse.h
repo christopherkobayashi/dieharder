@@ -15,10 +15,12 @@
 #define PBUF 128
 #define PK   1024
 
+extern unsigned int verbose;
+
  /*
   * Shared space
   */
- char splitbuf[PK][PBUF];
+extern char splitbuf[PK][PBUF];
 
  /*
   * parse.c prototypes
