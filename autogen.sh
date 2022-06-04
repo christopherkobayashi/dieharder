@@ -18,16 +18,4 @@ automake --add-missing --copy --gnu
 echo "Running autoreconf..."
 autoreconf
 
-#
-# Might as well run this -- then we are ready to run make.
-#
-echo "Running default ./configure --prefix=/usr"
-./configure --prefix=/usr
-echo "=================================================================="
-echo ""
-echo " Makefile should be built, and ./configure --prefix=/usr should be"
-echo " completed.  You may rerun configure with a different e.g."
-echo "--prefix if you want to put dieharder someplace else.  Otherwise"
-echo "you should be able to make, make install, or make rpm."
-echo ""
-echo "=================================================================="
+echo "Now run ./configure with desired arguments."
